@@ -64,8 +64,8 @@ export default function Home() {
             <Link className="hidden transition-colors hover:text-[#6f56d9] sm:inline" href="#estilos">
               Estilos
             </Link>
-            <Link className="rounded-full border border-[#dcd7eb] px-4 py-2 transition-colors hover:border-[#6f56d9] hover:text-[#6f56d9]" href="#proyecto">
-              El proyecto
+            <Link className="rounded-full border border-[#dcd7eb] px-4 py-2 transition-colors hover:border-[#6f56d9] hover:text-[#6f56d9]" href="/dashboard">
+              Mi espacio
             </Link>
           </nav>
         </div>
@@ -87,10 +87,10 @@ export default function Home() {
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link
-                href="#metodo"
+                href="/crear"
                 className="rounded-2xl bg-[#6f56d9] px-7 py-4 text-sm font-bold text-white shadow-[0_12px_28px_rgba(111,86,217,0.22)] transition-colors hover:bg-[#5840c5]"
               >
-                Descubrí el método <span aria-hidden="true">→</span>
+                Crear mi resumen <span aria-hidden="true">→</span>
               </Link>
               <Link href="#estilos" className="px-2 py-4 text-sm font-bold text-[#4e4768] underline decoration-[#c6b9ed] underline-offset-8 hover:text-[#6f56d9]">
                 Explorá los estilos
