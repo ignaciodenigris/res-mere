@@ -29,17 +29,15 @@ En esta etapa **todavía no están implementadas** la subida de fuentes, el edit
 
 ## Ejecutar localmente
 
-Cloná el repositorio e instalá las dependencias:
+Cloná el repositorio y seleccioná la rama de desarrollo:
 
     git clone https://github.com/ignaciodenigris/res-mere.git
     cd res-mere
+    git switch feature/etapa-1-nextjs
     npm install
     npm run dev
 
-Si la rama de la etapa 1 todavía no fue integrada a \`main\`, ejecutá primero:
-
-    git fetch origin
-    git switch feature/etapa-1-nextjs
+Una vez integrada esta etapa a la rama principal, no necesitarás cambiar de rama.
 
 Abrí **http://localhost:3000**.
 
@@ -48,7 +46,7 @@ Para verificar el proyecto:
     npm run lint
     npm run build
 
-> Nota: el primer \`npm install\` genera \`package-lock.json\`. Conviene incorporarlo al repositorio una vez verificado para asegurar instalaciones reproducibles.
+> Nota: el primer `npm install` genera `package-lock.json`. Conviene incorporarlo al repositorio una vez verificado para asegurar instalaciones reproducibles.
 
 ## Tecnologías
 
@@ -69,6 +67,6 @@ Más adelante se evaluará integrar **Tiptap** (editor), **Supabase** (datos y u
 
 ## Contribución y flujo Git
 
-Los cambios se desarrollan en ramas \`feature/...\` y se integran mediante pull requests. La rama principal debe permanecer estable.
+Los cambios se desarrollan en ramas `feature/...` y se integran mediante pull requests. La rama principal debe permanecer estable.
 
 Proyecto en etapa inicial; todavía no es un producto educativo listo para estudiantes.
