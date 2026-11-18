@@ -42,3 +42,47 @@ body {
 .soft-glow {
   background: radial-gradient(circle, rgba(184, 166, 255, 0.35), transparent 68%);
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .print-sheet,
+  .print-sheet * {
+    visibility: visible;
+  }
+
+  .print-sheet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  .print-sheet input,
+  .print-sheet textarea {
+    border: none !important;
+    resize: none !important;
+    outline: 0 !important;
+  }
+}
